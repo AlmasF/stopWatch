@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+    padding-top: 10px;
+}
+
+.numberWatch {
+    text-align: center;
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.circleWatch {
+    border: 2px #000 solid;
+    border-radius: 100%;
+
+    position: relative;
+
+    height: 200px;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.circleWatch div {
+    position: absolute;
+}
+
+.circleWatch div:first-child {
+    left: 92px;
+    top: 0;
+}
+
+.circleWatch div:nth-child(4) {
+    left: 0;
+    top: 90px;
+}
+
+.circleWatch div:nth-child(2) {
+    right: 0;
+    top: 90px;
+}
+
+.circleWatch div:nth-child(3) {
+    bottom: 0;
+    left: 92px;
+}
+
+.circleWatch span.center {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.circleWatch span.arrow {
+    width: 1px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.circleWatch span.arrow-black {
+    width: 1px;
+    height: 85px;
+    background-color: #000;
+}
+
+.circleWatch span.arrow-white {
+    width: 1px;
+    height: 65px;
+    background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    font-size: 24px;
+}
